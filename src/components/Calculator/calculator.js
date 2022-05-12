@@ -11,15 +11,18 @@ import { calculationStore } from '../../stores/calculator-store';
 
 export default function Calculator() {
     return (
+       
         <>
-            <h1>Calculator</h1>
+         <div className="container">
             <Provider store={calculationStore}>
-                <div className="container">
+                    <div className="calcCore">
                     <History />
                     <Display />
                     <NumPad />
                 </div>
+        
             </Provider>
+            </div>
         </>
     );
 }
