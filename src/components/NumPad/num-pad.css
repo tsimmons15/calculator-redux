@@ -1,4 +1,7 @@
-div.numpad {
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+div.numPad {
+    align-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -13,97 +16,253 @@ div.numpad {
 }
 
 .pct {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: pct;
 }
 
-.clear_entry {
+.ce {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: clear_entry;
 }
 
 .clear {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color: rgb(224, 76, 18);
     grid-area: clear;
 }
 
 .backspace {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color: rgb(224, 76, 18);
     grid-area: backspace;
 }
 
 .inverse {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: inverse;
 }
 
 .squared {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: squared;
 }
 
 .sqrt {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: sqrt;
 }
 
 .divide {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: divide;
 }
 
 .num7 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num7;
 }
 
 .num8 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num8;
 }
 
 .num9 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num9;
 }
 
 .times {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: times;
 }
 
 .num4 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num4;
 }
 
 .num5 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num5;
 }
 
 .num6 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num6;
 }
 
 .subtract {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: subtract;
 }
 
 .num1 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num1;
 }
 
 .num2 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num2;
 }
 
 .num3 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num3;
 }
 
 .plus {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color:rgb(24, 24, 47);
     grid-area: plus;
 }
 
-.plus_minus {
+.plus-minus {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: plus_minus;
 }
 
 .num0 {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: num0;
 }
 
 .radix {
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    cursor: pointer;
+    background-color: rgb(33, 39, 45);
+    color:antiquewhite;
     grid-area: radix;
 }
 
 .equals {
+    cursor: pointer;
+    margin: .5em;
+    border-style: groove;
+    border: 20px;
+    font-family: 'Iceland', cursive;
+    font-size: xx-large;
+    color:antiquewhite ;
+    background-color: rgb(224, 76, 18);
     grid-area: equals;
 }
