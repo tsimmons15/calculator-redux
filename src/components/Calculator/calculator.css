@@ -1,30 +1,96 @@
-.container {
-    width: 60%;
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 2.4fr;
+
+.container {  display: grid;
+    grid-template-columns: 0.1fr 2.8fr 0.1fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    grid-auto-columns: 2fr 1fr 1fr;
     gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas:
-        "history display display display display display display"
-        "history memory memory memory memory memory memory"
-        "history numpad numpad numpad numpad numpad numpad";
-}
+      ". . ."
+      ". calcCore ."
+      ". . .";
+     min-height: 550px;
+  }
+  
+  .calcCore {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "displayContainer displayContainer displayContainer"
+      "historyContainer numContainer numContainer"
+      "historyContainer numContainer numContainer";
+    grid-area: calcCore;
 
-.display {
-    grid-area: display;
-}
+  }
+  
+  .displayContainer {  display: grid;
+    grid-template-columns: 0.1fr 2.8fr 0.1fr;
+    grid-template-rows: 0.4fr 2.3fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". display ."
+      ". . .";
+    grid-area: displayContainer;
+    background-color:rgb(173, 154, 131);
+  }
+  
+  .display {
+    min-height: 3em;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Iceland', cursive;
+    font-size: 55px;
+    color:darkred;
+    text-align: right;  
+    grid-area: display; 
+    background-color: rgb(5, 5, 5);}
+  
+  .historyContainer {  
 
-.memory {
-    grid-area: memory;
-}
-
-.numpad {
-    padding-left: 200px;
-    grid-area: numpad;
-}
-
-.history {
-    grid-area: history;
+      border: darkcyan;
+      display: grid;
+    grid-template-columns: 0.3fr 2.4fr 0.3fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". history ."
+      ". . .";
+    grid-area: historyContainer;
+    background-color:  rgb(173, 154, 131);
+  }
+  
+  .history { 
+      max-height: 275px;
+      position:sticky;
+      overflow-y: scroll;
+    color:darkred;
+    font-family: 'Iceland', cursive;grid-area: history; 
+    font-size: 50px;
+    background-color:rgb(5, 5, 5);}
+  
+  .numContainer {  display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". numPad ."
+      ". . .";
+    grid-area: numContainer;
+    background-image: url("https://media.istockphoto.com/photos/brushed-metal-texture-picture-id183803298?k=20&m=183803298&s=612x612&w=0&h=CFOZbcxMvF4k9FRsDEpOESB_Pv-2K1E-ufwyK3M1peY=");
+    
+  }
+  
+  .numPad { 
+    min-height: 250px; 
+    grid-area: numPad; 
 }
